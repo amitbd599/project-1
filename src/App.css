@@ -1481,16 +1481,32 @@ background: ------;
   max-width: 1170px;
 }}
 
-
-
+.jRFJkP:hover:enabled, .jRFJkP:focus:enabled {
+  color: #000 !important;
+  background-color: rgb(255 255 255) !important;
+  box-shadow: 0 0 2px 0 #333;
+}
+.lcUbOd{
+  background: #fff !important;
+}
+.lcUbOd:hover, .lcUbOd:focus {
+  cursor: pointer;
+  box-shadow: 0 0 1px 3px rgb(0, 0, 0) !important;
+}
 
 
 /*------------------------------ Main Css  -------------------------*/    
 
 /* Header File */
 
+#header {
+  /* position: fixed; */
+
+}
+
 #header .topHead {
   background: #1A4781;
+  width: 100%;
   /* height: 60px; */
 
 }
@@ -1578,7 +1594,7 @@ background: ------;
 /* NabBar */
 
 #navBar {
-  padding: 16px 0;
+  /* padding: 16px 0; */
 }
 
 #navBar {
@@ -1697,6 +1713,11 @@ float: none !important;
 
 /* Hero section */
 
+.blueHeight{
+  width: 100%;
+  height: 88px;
+  background: #1A4781;
+}
 #hero {
   background-image: url(./Components/Image/banner.png);
   background-position: center;
@@ -1704,7 +1725,7 @@ float: none !important;
   background-size: cover;
   width: 100%;
   height: 645px;
-  margin-top: 128px;
+  /* margin-top: 128px; */
 }
 
 #hero hgroup {}
@@ -1830,6 +1851,23 @@ float: none !important;
 
 #blog .card {
   border: none;
+
+}
+#blog .card img{
+  height: 170px;
+  position: relative;
+  
+}
+
+#blog .card:hover .overlay{
+  position: absolute;
+    top: 0;
+    left: 0;
+    background: #17519d6b;
+    height: 170px;
+    width: 100%;
+    transition: all .3s linear;
+  
 }
 
 
@@ -1837,6 +1875,9 @@ float: none !important;
   font-size: 19px;
   font-weight: 700;
   color: #1E2127;
+}
+#blog .card .card-title:hover {
+  color: #17519D;
 }
 
 #blog .card .card-text {
@@ -2064,18 +2105,20 @@ float: none !important;
   color: #1C1C1C;
 }
 
-#business_expertise .id {}
+#business_expertise .id {
+  display: flex;
+}
 
 #business_expertise .id .person {
-  float: left;
   margin-left: 86px;
   margin-top: 30px;
 }
 
 #business_expertise .id h2 {
-  margin-top: 86px;
-  display: inline-block;
-  margin-left: 30px;
+  margin-top: 77px;
+    display: inline-block;
+    margin-left: 19px;
+    font-size: 25px;
 }
 
 #business_expertise .id p {
@@ -2084,8 +2127,7 @@ float: none !important;
 }
 
 #business_expertise .id .signature {
-  float: right;
-  margin-top: -57px;
+
 }
 
 
@@ -2256,15 +2298,15 @@ float: none !important;
 
 #feedback-chose .slider-div {
   width: 100%;
-  height: 358px;
+  height: 370px;
 }
 
 #feedback-chose .carousel-item h3 {
   color: #F9FAFB;
   font-size: 20px;
-  margin-top: 107px;
+  margin-top: 74px;
   display: table;
-  margin-left: 161px;
+  margin-left: 53px;
 }
 
 #feedback-chose .carousel-item img {
@@ -2280,7 +2322,7 @@ float: none !important;
 
 #feedback-chose .carousel-item .text {
   float: left;
-  margin-left: 36px;
+  margin-left: 53px;
   font-size: 14px;
 }
 
@@ -2312,7 +2354,7 @@ float: none !important;
 
 #feedback-chose .why-choose hgroup {
 
-  padding-top: 62px;
+  padding-top: 23px;
   padding-left: 65px;
 }
 
@@ -2555,6 +2597,7 @@ float: none !important;
 
 #latest_news .card img {
   position: relative;
+  height: 170px;
 }
 
 #latest_news .card .date {
@@ -2581,6 +2624,9 @@ float: none !important;
   color: #1C1C1C;
   font-weight: 700;
 }
+#latest_news .card .card-title:hover {
+ color: #17519D;
+}
 
 #latest_news .card .card-text {
   font-size: 14px;
@@ -2591,6 +2637,9 @@ float: none !important;
 #latest_news .card a {
   font-size: 14px;
   color: #AFAFAF;
+}
+#latest_news .card a {
+  color: #17519D;
 }
 
 
@@ -2789,20 +2838,18 @@ float: none !important;
 }
 
 #Message .part-2 .btn {
-  padding: 21px 48px;
+  padding: 14px 29px;
   background-color: #1A4781;
   color: #fff;
   font-size: 15px;
   border: 2px solid #ddd;
   border-radius: 10px;
+  transition: all .2s linear !important;
 }
 
 #Message .part-2 .btn:hover {
-  padding: 21px 48px;
   background-color: #ffffff;
   color: rgb(34, 34, 34);
-  font-size: 15px;
-  border: 2px solid #ddd;
 }
 
 #Message .part-3 {
@@ -3289,10 +3336,15 @@ float: none !important;
 
 #pageLink .part-1 {}
 
-#pageLink .part-1 a {
+#pageLink .part-1 a,
+#pageLink .part-1 p {
   font-size: 16px;
   font-weight: normal;
   color: #1E2127;
+  font-weight: 600;
+}
+#pageLink .part-1 a {
+  cursor: pointer;
 }
 
 #pageLink .part-1 a:hover {
@@ -3318,7 +3370,8 @@ float: none !important;
 #AboutHeroSection {}
 
 #AboutHeroSection figure img {
-  margin-top: -2px;
+  margin-top: 64px;
+  width: 357px;
 }
 
 #AboutHeroSection hgroup {}
@@ -3727,108 +3780,42 @@ float: none !important;
 }
 
 /* Client Review */
-#client_Review {
-  background-color: #1C56A1;
-  height: 520px;
+#client_Review{
+  padding: 100px 0;
+  background-color: #17519D;
+}
+#client_Review .carousel-slider{
+ text-align: center;
+ width: 70%;
 }
 
-#client_Review .slider {
-  height: 500px;
-}
 
-#client_Review .carousel-caption {
-  top: 100px;
-}
 
-#client_Review .carousel-caption img {
-  margin-right: 338px;
-}
 
-#client_Review .carousel-caption h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 25px;
-}
 
-#client_Review .carousel-caption p {
-  font-size: 15px;
-  padding: 0 130px;
-  padding-bottom: 30px;
-}
 
-#client_Review .carousel-caption hr {
-  margin: 0 300px;
-  border-top: 2px solid rgba(0, 0, 0, .1);
-  padding-bottom: 14px;
-}
-
-#client_Review .carousel-caption h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-}
-
-#client_Review .carousel-caption h4 {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #fff;
-}
-
-#client_Review .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
 
 @media only screen and (max-width: 1200px) {
-  #client_Review .carousel-caption {
+  #carousel-slider {
     top: 77px;
   }
 
-  #client_Review .carousel-caption {
-    top: 77px;
-  }
-
-  #client_Review .carousel-caption p {
-    padding: 0 62px;
-  }
-
-  #client_Review .carousel-caption hr {
-    margin: 0 253px;
-    margin-top: 20px;
-  }
 
 
 }
 
 @media only screen and (max-width: 768px) {
-  #client_Review .carousel-caption {
+  #carousel-slider {
     left: 0;
   }
+  #client_Review .carousel-slider{
+    width: 100%;
+   }
 
 }
 
 @media only screen and (max-width: 575px) {
 
-  #client_Review .carousel-caption h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 21px;
-  }
-
-  #client_Review .carousel-caption img {
-    margin-right: 0;
-  }
-
-  #client_Review .carousel-caption {
-    top: 39px;
-  }
-
-  #client_Review .carousel-caption p {
-    padding: 0 4px;
-  }
 
 
 }
@@ -4390,6 +4377,7 @@ background-color: #1f75e6;
   height: 10px;
   border-radius: 50%;
   bottom: -13px;
+  margin: 0 3px;
 
 }
 #Service_Details_ClientReview_Details .carousel-caption h3 {
@@ -4450,6 +4438,9 @@ float: left;
   margin-top: -14px;
   padding-left: 60px;
 
+}
+.accordion-item{
+  /* margin: 10px 0 !important; */
 }
 
 

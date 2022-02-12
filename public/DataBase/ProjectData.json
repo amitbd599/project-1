@@ -1,0 +1,57 @@
+[
+    {
+      "_id": "6202834361cd31bcf42e1c24",
+      "position": "Google Analyzing",
+     "data":" Accounting",
+      "picture": "https://i.ibb.co/Rh2TCFr/pic-3.png"
+    },
+    {
+      "_id": "6202834376d8f953734baeef",
+      "position": "Equity Research",
+     "data":" Energy",
+      "picture": "https://i.ibb.co/MGtnJYp/pic-4.png"
+    },
+    {
+      "_id": "620283431df0830c74aeb88a",
+      "position": "Industry Analysis",
+     "data":"Materials ",
+      "picture": "https://i.ibb.co/x3CpTwQ/pic-5.png"
+    },
+    {
+      "_id": "62028343e50d972aaa2e33a9",
+      "position": "Economic Health",
+     "data":" Industrials",
+      "picture": "https://i.ibb.co/6rFgS4F/pic-6.png"
+    },
+    {
+      "_id": "6202834361cd31bcf42e1c24",
+      "position": "Time-consuming",
+     "data":"Consumer Discretionary ",
+      "picture": "https://i.ibb.co/SRNwqBj/pic-7.png"
+    },
+    {
+      "_id": "6202834376d8f953734baeef",
+      "position": "Industry Factors",
+     "data":"Consumer Staples ",
+      "picture": "https://i.ibb.co/QY4Z88F/pic-8.png"
+    },
+    {
+      "_id": "620283431df0830c74aeb88a",
+      "position": "Sub-industries",
+     "data":"Health Care ",
+      "picture": "https://i.ibb.co/sFv9dc5/pic-9.png"
+    },
+    {
+      "_id": "62028343e50d972aaa2e33a9",
+      "position": "Investors Understand",
+     "data":"Financials ",
+      "picture": "https://i.ibb.co/Cm5x2tn/pic-10.png"
+    },
+    {
+      "_id": "62028343e50d972aaa2e33a9",
+      "position": "Competitive Advantage",
+     "data":"Information Technology",
+      "picture": "https://i.ibb.co/bNWYpXZ/pic-11.png"
+    }
+    
+  ]

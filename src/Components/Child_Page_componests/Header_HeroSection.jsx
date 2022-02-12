@@ -3,7 +3,11 @@ import React, { Component } from 'react'
 export default class Header_HeroSection extends Component {
   render() {
     return (
-        <section id="hero">
+        <div>
+            <div className='blueHeight'>
+
+            </div>
+            <section id="hero">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -21,6 +25,7 @@ export default class Header_HeroSection extends Component {
             </div>
         </div>
     </section>
+        </div>
     )
   }
 }
