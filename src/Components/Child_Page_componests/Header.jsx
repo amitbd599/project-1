@@ -137,16 +137,13 @@ export default class Header extends Component {
                         
                         <NavLink class="dropdown-item" as={Link} to={'/service-details'}>Service Details</NavLink>
                         <NavLink class="dropdown-item" as={Link} to={'/our-project'}> Our Project</NavLink>
+                        <NavLink class="dropdown-item" as={Link} to={'/single-project'}> Single Project</NavLink>
+                        <NavLink class="dropdown-item" as={Link} to={'/single-news'}> Single News</NavLink>
+                        <NavLink class="dropdown-item" as={Link} to={'/our-team'}> Our Team</NavLink>
                        
-                        <a class="dropdown-item" href="single-project.html">
-                          Single Project
-                        </a>
-                        <a class="dropdown-item" href="single-news.html">
-                          Single News
-                        </a>
-                        <a class="dropdown-item" href="our-team.html">
-                          Our Team
-                        </a>
+                        
+                       
+                       
                       </div>
                     </li>
 
