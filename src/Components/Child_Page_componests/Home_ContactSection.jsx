@@ -23,7 +23,7 @@ export default class Home_ContactSection extends Component {
                 <span class="number">+880 876 65 455</span>
               </hgroup>
             </div>
-            <div class="col-md-3 part-2">
+            <div class="col-md-3 part-2 ">
               <div class="mass">
                 <h2>Drop Your Message</h2>
                 <form class="form-inline">

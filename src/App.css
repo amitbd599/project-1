@@ -1493,6 +1493,9 @@ background: ------;
   cursor: pointer;
   box-shadow: 0 0 1px 3px rgb(0, 0, 0) !important;
 }
+.navbar-light .navbar-toggler{
+  margin-right: 10px;
+}
 
 
 /*------------------------------ Main Css  -------------------------*/    
@@ -1728,7 +1731,9 @@ float: none !important;
 
 
 @media only screen and (max-width: 576px) {
- 
+  #pageLink .row{
+   align-items: center;
+      }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1879,6 +1884,10 @@ float: none !important;
   border: none;
 
 }
+#blog .card .card-body{
+  padding: 20px 0;
+
+}
 #blog .card img{
   height: 170px;
   position: relative;
@@ -1910,6 +1919,7 @@ float: none !important;
   font-size: 15px;
   font-weight: 400;
   color: #1E2127;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 786px) {
@@ -2702,7 +2712,7 @@ float: none !important;
 
 @media only screen and (max-width: 576px) {
   #latest_news {
-    margin-top: 1430px !important;
+    margin-top: 1560px !important;
   }
 
   #latest_news .container {
@@ -2944,6 +2954,10 @@ float: none !important;
     margin-top: 70px;
   }
 
+  #Message .part-2{
+  margin-top: 20px;
+  }
+
   #Message .part-1 h2 {
     font-size: 30px;
     color: #1C1C1C;
@@ -2963,7 +2977,7 @@ float: none !important;
   #Message .part-2 .btn {
     margin-left: 0;
     position: absolute;
-    margin-top: 590px;
+    margin-top: 185px;
   }
 
   #Message .part-3 {
@@ -2973,6 +2987,7 @@ float: none !important;
   #Message .part-3 .form-inline {
     margin-top: 4px !important;
   }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -3521,6 +3536,9 @@ margin: 0 20px;
 @media only screen and (max-width: 575px) {
   #AboutHeroSection hgroup {
     margin-left: 0;
+  }
+  #pageLink .part-2 .shear a {
+    margin-right: -72px;
   }
 
   #AboutHeroSection .id .person {
@@ -4553,6 +4571,9 @@ float: left;
 
 } 
 @media only screen and (max-width:576px){
+  #Service_Details_ClientReview_Details .bd-example .slide{
+    margin-bottom: 20px !important;
+   }
   
   #Service_Details_Option .part-2 hgroup {
     text-align: center;
@@ -5099,6 +5120,16 @@ color: #17519D;
 }
 #our_news  .pagination{
   margin-bottom: 30px;
+}
+
+
+
+/* Media */
+
+@media only screen and (max-width:575px) {
+  #our_news .card-point hgroup h2{
+    font-size: 22px !important;
+  }
 }
 
 

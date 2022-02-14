@@ -114,7 +114,7 @@ export default class Contact extends Component {
                       </label>
                       <input
                         type="text"
-                        class="form-control mb-20  mr-sm-2"
+                        class="form-control mb-20  me-2 md-me-0"
                         id="inlineFormInputName2"
                         placeholder="First Name*"
                       />
@@ -123,10 +123,11 @@ export default class Contact extends Component {
                       </label>
                       <input
                         type="text"
-                        class="form-control mb-20 ms-2 mr-sm-2"
+                        class="form-control mb-20 ms-0 md-ms-2 "
                         id="inlineFormInputName2"
                         placeholder="Last Name*"
                       />
+                      
                       <label class="sr-only" for="inlineFormInputName2">
                         Name
                       </label>
