@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Button, FormControl, InputGroup } from "react-bootstrap";
+import { FaSistrix } from "react-icons/fa";
 
 export default class Footer extends Component {
   render() {
@@ -26,19 +28,17 @@ export default class Footer extends Component {
                     Username
                   </label>
                   <div class="input-group mb-20">
-                    <input
-                      type="text"
-                      class="form-control more-1"
-                      id="inlineFormInputGroupUsername2"
-                      placeholder="Enter Your Email"
-                    />
-
-                    <div class="input-group-prepend">
-                      <a class="input-group-text" href="#">
-                        {" "}
-                        <i class="fas fa-arrow-right"></i>
-                      </a>
-                    </div>
+                    <InputGroup className="mb-3">
+                      <FormControl
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                      />
+                      <Button variant="primary" id="button-addon2">
+                      <FaSistrix/>
+                      </Button>
+                    </InputGroup>
+                    
                   </div>
                 </fieldset>
               </div>
@@ -99,7 +99,7 @@ export default class Footer extends Component {
                     <span class="mr-10">
                       <i class="fas fa-phone-alt"></i>
                     </span>
-                    <span class="text">+880 1723 801 729</span>
+                    <span class="text">+80 99362 801 729</span>
                   </div>
                   <div class="mb-10">
                     <span class="mr-10">
@@ -133,10 +133,10 @@ export default class Footer extends Component {
             <div class="row">
               <div class="col-md-4 part-1">
                 <p>
-                  © 2021{" "}
+                  © 2022{" "}
                   <b>
                     {" "}
-                    <a href="https://getmore7.com/">getmore7.com</a>{" "}
+                    <a href="https://getmore7.com/">amitjs.com</a>{" "}
                   </b>
                   || All Rights Reserved.{" "}
                 </p>
@@ -144,8 +144,8 @@ export default class Footer extends Component {
               <div class="col-md-4 part-1">
                 <p>
                   {" "}
-                  Design credit{" "}
-                  <a href="https://www.linkedin.com/in/amitgoclick/">
+                  Contact With{" "}
+                  <a href="https://www.linkedin.com/in/amitbiswas-tm/">
                     Amit Biswas
                   </a>{" "}
                 </p>

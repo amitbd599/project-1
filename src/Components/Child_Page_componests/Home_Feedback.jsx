@@ -31,7 +31,7 @@ export default class Home_Feedback extends Component {
                           </p>
 
                           <hr />
-                          <div className="d-flex">
+                          <div className="d-lg-flex d-md-block">
                             <img
                               class="img-fluid float-left"
                               src={author_1}
@@ -57,7 +57,7 @@ export default class Home_Feedback extends Component {
                           </p>
 
                           <hr />
-                          <div className="d-flex">
+                          <div className="d-lg-flex d-md-block">
                             <img
                               class="img-fluid float-left"
                               src={author_2}
@@ -65,7 +65,7 @@ export default class Home_Feedback extends Component {
                             />
                             <div>
                               <h3>Bina Biswas</h3>
-                              <p class="text">Managing Director - amitjs.com</p>
+                              <p class="text">Director - amitjs.com</p>
                             </div>
                           </div>
                         </div>
@@ -83,7 +83,7 @@ export default class Home_Feedback extends Component {
                           </p>
 
                           <hr />
-                          <div className="d-flex">
+                          <div className="d-lg-flex d-md-block">
                             <img
                               class="img-fluid float-left"
                               src={author_3}

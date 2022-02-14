@@ -15,8 +15,26 @@ import _About_ClientReview from "../Child_Page_componests/_About_ClientReview";
 import Home_ContactSection from "../Child_Page_componests/Home_ContactSection";
 import Home_LogoSection from "../Child_Page_componests/Home_LogoSection";
 import Footer from "../Child_Page_componests/Footer";
+import _TeamData from "../Child_Page_componests/_TeamData";
+import axios from "axios";
+import Marquee from "react-fast-marquee";
 
 export default class About extends Component {
+  constructor(){
+    super();
+    this.state={
+      data:[]
+    }
+  }
+
+  componentDidMount(){
+    const url = 'DataBase/TeamData.json';
+    axios.get(url)
+    .then(res=>{
+      const data= res.data;
+      this.setState({data})
+    })
+  }
   render() {
     return (
       <>
@@ -145,7 +163,20 @@ export default class About extends Component {
               </div>
             </div>
             <div class="row part-2">
-              <_About_CardItems
+            
+            <Marquee gradient={false}>
+             
+                {
+                this.state.data.map((data)=>(
+                  <_About_CardItems data={data} key={data._id}></_About_CardItems>
+                ))
+              }
+             
+           
+             </Marquee>
+           
+              
+              {/* <_About_CardItems
                 title="Donna J. Murphy"
                 position="Product Manager"
                 img="https://i.ibb.co/D92rFFR/card-2.png"
@@ -172,7 +203,7 @@ export default class About extends Component {
                 img="https://i.ibb.co/6n5bmN8/card-1.png"
                 des="This much I thought proper to tell you in relation to yourself, and to the trust that
                                 reposed in you."
-              ></_About_CardItems>
+              ></_About_CardItems> */}
             </div>
           </div>
         </section>

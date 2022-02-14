@@ -56,7 +56,7 @@ export default class Home_BlogSection extends Component {
                     
                      {data.des}
                     </p>
-                    <div className="overlay"></div>
+                    <div className="overlayBlog"></div>
                     
                   </div>
                 </div>

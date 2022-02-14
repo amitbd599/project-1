@@ -9,37 +9,48 @@ import Our_Projects from "./Components/Pages/Our_Projects";
 import Single_Project from "./Components/Pages/Single_Project";
 import Single_News from "./Components/Pages/Single_News";
 import Team from "./Components/Pages/Team";
+import News from "./Components/Pages/News";
+import Contact from "./Components/Pages/Contact";
+import ScrollToTop from "./Functions/ScrollToTop";
 
 class App extends Component {
   render() {
     return (
       <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/service">
-          <Services />
-        </Route>
-        <Route exact path="/service-details">
-          <Service_Details />
-        </Route>
-        <Route exact path="/our-project">
-          <Our_Projects />
-        </Route>
-        <Route exact path="/single-project">
-          <Single_Project />
-        </Route>
-        <Route exact path="/single-news">
-          <Single_News />
-        </Route>
-        <Route exact path="/our-team">
-          <Team />
-        </Route>
-      </Switch>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/service">
+              <Services />
+            </Route>
+            <Route exact path="/service-details">
+              <Service_Details />
+            </Route>
+            <Route exact path="/our-project">
+              <Our_Projects />
+            </Route>
+            <Route exact path="/single-project">
+              <Single_Project />
+            </Route>
+            <Route exact path="/single-news">
+              <Single_News />
+            </Route>
+            <Route exact path="/our-team">
+              <Team />
+            </Route>
+            <Route exact path="/news">
+              <News />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </ScrollToTop>
       </Router>
     );
   }

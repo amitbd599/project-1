@@ -1,27 +1,41 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Marquee from "react-fast-marquee";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export default class _About_CardItems extends Component {
   render() {
-      const {title,position, des, img}=this.props;
+    const { name, position, des, img } = this.props.data;
     return (
-        <div class="col-lg-3 col-md-6">
-        <div class="card">
-            <img class="card-img-top" src={img} alt="Card image cap"/>
-            <div class="">
-                <h4 class="card-title">{title}</h4>
-                <h5>{position}</h5>
-                <p class="card-text">
-                    {des}
-                </p>
-                <hr/>
-                <span class="social">
-                    <a href="#"> <i class="fab fa-facebook-square"></i></a>
-                    <a href="#"> <i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                </span>
-            </div>
+     
+      <div class="card myCard">
+        <img class="card-img-top" src={img} alt="Card image cap" />
+        <div class="">
+          <h4 class="card-title">{name}</h4>
+          <h5>{position}</h5>
+          <p class="card-text">{des}</p>
+          <hr />
+          <span class="social">
+            <a href="#">
+              {" "}
+             <FaFacebookSquare></FaFacebookSquare>
+            </a>
+            <a href="#">
+              {" "}
+              <FaTwitterSquare></FaTwitterSquare>
+            </a>
+            <a href="#">
+             <FaLinkedin></FaLinkedin>
+            </a>
+            <a href="#">
+             <FaInstagram></FaInstagram>
+            </a>
+          </span>
         </div>
-    </div>
-    )
+      </div>
+        
+    );
   }
 }

@@ -1554,12 +1554,31 @@ background: ------;
 
 #header .topHead .part-2 a {
   color: #F9FAFB;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
+}
+#header .search-overlay{
+  position: absolute;
+/* right: -400px; */
+width: 25%;
+right: 20px;
+top: -100px;
+transition: all .4s linear;
+
+}
+#header .search-icon{
+  cursor: pointer;
+  font-size: 21px;
+  margin-left: -12px;
+}
+#header .search-overlay.show{
+top: 101px;
 }
 
 @media only screen and (max-width: 992px) {
-  #header .topHead .part-1 span {
+  #header .topHead .part-1 .phNo, 
+  #header .topHead .part-1 .mail, 
+  #header .topHead .part-1 .envelope{
     display: none;
   }
 
@@ -1580,7 +1599,13 @@ background: ------;
 
 @media only screen and (max-width: 576px) {
   #header .topHead .part-2 .btn {
-    padding: 9px 27px;
+    padding: 8px 13px;
+  }
+  #header .search-overlay.show {
+    top: 14px;
+    z-index: 9999999;
+    width: 100%;
+    right: -50px;
   }
 }
 
@@ -1602,6 +1627,7 @@ background: ------;
   z-index: 10000;
   width: 100%;
   background: rgb(255, 255, 255);
+  border-bottom: 2px solid #393E5457;
 
 }
 
@@ -1859,7 +1885,7 @@ float: none !important;
   
 }
 
-#blog .card:hover .overlay{
+#blog .card:hover .overlayBlog{
   position: absolute;
     top: 0;
     left: 0;
@@ -2188,15 +2214,15 @@ float: none !important;
 
   #business_expertise .id .person {
     float: left;
-    margin-left: 119px;
+    margin-left: 35px;
     margin-top: 39px;
   }
 
   #business_expertise .id h2 {
-    margin-top: 32px;
+    margin-top: 96px;
     display: inline-block;
     margin-left: 21px;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #business_expertise .id p {
@@ -2293,7 +2319,7 @@ float: none !important;
 
 #feedback-chose hgroup hr {
   border-top: 1px solid rgba(151, 150, 150, 0.34);
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 #feedback-chose .slider-div {
@@ -3160,7 +3186,7 @@ float: none !important;
 }
 
 #footer .part-1 .form-control {
-  padding: 1.375rem .75rem;
+  
 }
 
 #footer .part-2 {
@@ -3204,8 +3230,8 @@ float: none !important;
 
 #footer .part-4 .fab {
   margin-top: 10px;
-  color: #1A4781;
-  font-size: 30px;
+  color: #2382ff;
+  font-size: 18px;
 }
 
 #footer .part-4 a {
@@ -3411,6 +3437,10 @@ float: none !important;
 #AboutHeroSection .id .signature {
   float: right;
   margin-top: -57px;
+}
+#AboutHeroSection .myCard {
+  width: 300px !important;
+margin: 0 20px;
 }
 
 
@@ -3623,6 +3653,11 @@ float: none !important;
   font-weight: normal;
   color: #ffffff;
 }
+#aboutCard .myCard{
+ width: 200px !important;
+ margin: 0 20px;
+
+}
 
 @media only screen and (max-width: 991px) {
   #about_counter {
@@ -3709,19 +3744,20 @@ float: none !important;
 }
 
 #aboutCard .part-2 p {
-  font-size: 15px;
-  color: #1C1C1C;
-  margin-bottom: 26px;
+  font-size: 14px;
+color: #1C1C1CB0;
+margin-bottom: 26px;
+text-align: justify;
 }
 
 #aboutCard .part-2 .social {}
 
 #aboutCard .part-2 a {
-  font-size: 35px;
+  font-size: 20px;
   color: #1C1C1C;
   font-weight: 500;
   margin-bottom: 26px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #aboutCard .part-2 a:hover {
@@ -5029,7 +5065,7 @@ margin-bottom: 10px;
   color: #1C56A1;
 }
 #our_news .search .form-control{
-  padding: 22px 25px;
+  padding: 12px 30px;
 }
 #our_news .search .btn-primary{
   background: #17519D;
@@ -5343,6 +5379,7 @@ color: #1A4781;
  border: 1px solid #ddd;
  cursor: pointer;
  padding-bottom: 43px;
+ transition: all .2s linear !important;
 }
 #contact-part-1 .part-2 hgroup .fas {
 margin-top: 25px;
@@ -5403,12 +5440,12 @@ margin-bottom: 130px;
   background: #1A4781 !important;
   padding: 15px 20px;
   border: 2px solid #ddd;
+  transition: all .2s linear !important;
 }
 #contact-location-part .contact-box .btn:hover{
   background: #fff !important;
   border: 2px solid #17519D;
   color: #0e0e0e;
-  margin-top: 14px;
 }
 
 

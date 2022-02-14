@@ -15,7 +15,7 @@ export default class Home_LatestNews extends Component {
         const url = 'DataBase/NewsData.json'
         axios.get(url)
         .then(res=>{
-            const data = res.data;
+            const data = res.data.slice(0,4);
             this.setState({data})
         })
     }

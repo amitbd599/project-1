@@ -6,6 +6,7 @@ import Header from "../Child_Page_componests/Header";
 import Home_LogoSection from "../Child_Page_componests/Home_LogoSection";
 import PageLink from "../Child_Page_componests/PageLink";
 import PageName from "../Child_Page_componests/PageName";
+import _News_SideBar from "../Child_Page_componests/_News_SideBar";
 
 export default class Single_News extends Component {
   render() {
@@ -271,7 +272,7 @@ export default class Single_News extends Component {
                       </label>
                       <input
                         type="text"
-                        class="form-control mb-20 mr-sm-2"
+                        class="form-control mb-20 me-sm-2"
                         id="inlineFormInputName2"
                         placeholder="Username*"
                       />
@@ -280,7 +281,7 @@ export default class Single_News extends Component {
                       </label>
                       <input
                         type="text"
-                        class="form-control mb-20 mr-sm-2"
+                        class="form-control mb-20 me-sm-2"
                         id="inlineFormInputName2"
                         placeholder="Email Address*"
                       />
@@ -311,104 +312,12 @@ export default class Single_News extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 pl-30">
-                <div class="item-1">
-                  <div class="search">
-                    <InputGroup className="mb-1">
-                      <FormControl
-                        placeholder="Recipient's username"
-                        aria-label="Recipient's username"
-                        aria-describedby="basic-addon2"
-                      />
-                      <Button  class=" btn-primary" id="button-addon2">
-                      <i class="fas fa-search"></i>
-                      </Button>
-                    </InputGroup>
-                   
-                  </div>
-                  <hgroup>
-                    <h2>Categories</h2>
-                  </hgroup>
-                  <div class="categories">
-                    <div>
-                      <a href="#"> Budget</a>
-                      <span class="left">(100)</span>
-                      <hr class="mt-5" />
-                    </div>
-                    <div>
-                      <a href="#">Account</a>
-                      <span class="left">(19)</span>
-                      <hr class="mt-5" />
-                    </div>
-                    <div>
-                      <a href="#">Invesment</a>
-                      <span class="left">(99)</span>
-                      <hr class="mt-5" />
-                    </div>
-                    <div>
-                      <a href="#">Stock</a>
-                      <span class="left">(19)</span>
-                      <hr class="mt-5" />
-                    </div>
-                    <div>
-                      <a href="#">Financial</a>
-                      <span class="left">(19)</span>
-                      <hr class="mt-5" />
-                    </div>
-                  </div>
-                </div>
-                <div class="item-2">
-                  <h2>Recent News</h2>
-                  <div class="media d-flex">
-                    <img
-                      class=" w-25 me-3 rounded-circle"
-                      data-src="holder.js/64x64?theme=sky"
-                      alt="64x64"
-                      src="https://i.imgur.com/nYheL2z.png"
-                    />
-                    <div class="media-body">
-                        <Link className="" to={''}>Easy way to high global sotck marketin...</Link>
-                      <p>13 Feb, 2016 </p>
-                    </div>
-                  </div>
-                  <div class="media d-flex">
-                    <img
-                      class="w-25 me-3 rounded-circle"
-                      data-src="holder.js/64x64?theme=sky"
-                      alt="64x64"
-                      src="https://i.imgur.com/yf4YFuP.png"
-                    />
-                    <div class="media-body">
-                      <a href="#">Easy way to high global sotck marketin...</a>
-                      <p>13 Feb, 2016 </p>
-                    </div>
-                  </div>
-                  <div class="media d-flex">
-                    <img
-                      class="w-25 me-3 rounded-circle"
-                      data-src="holder.js/64x64?theme=sky"
-                      alt="64x64"
-                      src="https://i.imgur.com/M4mZmeT.png"
-                    />
-                    <div class="media-body">
-                      <a href="#">Easy way to high global sotck marketin...</a>
-                      <p>13 Feb, 2016 </p>
-                    </div>
-                  </div>
-                  <div class="media d-flex">
-                    <img
-                      class="w-25 me-3 rounded-circle"
-                      data-src="holder.js/64x64?theme=sky"
-                      alt="64x64"
-                      src="https://i.imgur.com/fOhxfv1.png"
-                    />
-                    <div class="media-body">
-                      <a href="#">Easy way to high global sotck marketin...</a>
-                      <p>13 Feb, 2016 </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
+              {/* Side Bar */}
+
+              <_News_SideBar></_News_SideBar>
+
             </div>
           </div>
         </section>

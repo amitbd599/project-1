@@ -56,7 +56,7 @@ export default class Team extends Component {
 
         {/* Logo Section */}
 
-        <Home_LogoSection></Home_LogoSection>
+        <Home_LogoSection></Home_LogoSection> 
 
         {/* Footer */}
 
